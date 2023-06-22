@@ -1,0 +1,170 @@
+.about {
+    &-content {
+        flex: 0 0 100%;
+        max-width: 100%;
+        .about-text {
+            flex: 0 0 100%;
+            max-width: 100%;
+            h3 {
+                font-size: 2.4rem;
+                margin-bottom: 1.5rem;
+                font-weight: 700;
+                color: $text-black-900;
+                span {
+                    color: $skin-color;
+                }
+            }
+            p {
+                font-size: 1.6rem;
+                line-height: 2.5rem;
+                color: $text-black-700;
+            }
+        }
+        .personal-info {
+            flex: 1 1 60%;
+            max-width: 60%;
+            margin-top: 4rem;
+            .info-item {
+                flex: 0 0 50%;
+                max-width: 50%;
+                p {
+                    font-weight: 600;
+                    padding: 1rem 0;
+                    font-size: 1.6rem;
+                    color: $text-black-900;
+                    border-bottom: 0.1rem solid $bg-black-50;
+                    span {
+                        font-weight: 400;
+                        color: $text-black-700;
+                        margin-left: 0.4rem;
+                        display: inline-block;
+                    }
+                }
+            }
+            .buttons {
+                margin-top: 3rem;
+                .btn {
+                    margin-right: 1.5rem;
+                    margin-top: 1rem;
+                }
+            }
+        }
+        .skills  {
+            flex: 1 1 40%;
+            max-width: 40%;
+            margin-top: 4rem;
+            .skill-item {
+                flex: 0 0 100%;
+                max-width: 100%;
+                margin-bottom: 1rem;
+                h5 {
+                    line-height: 4rem;
+                    font-weight: 600;
+                    font-size: 1.6rem;
+                    color: $text-black-900;
+                    text-transform: capitalize;
+                }
+                .progress {
+                    background-color: $bg-black-50;
+                    height: 0.7rem;
+                    border-radius: .4rem;
+                    width: 100%;
+                    position: relative;
+                    .progress-in {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        height: 100%;
+                        border-radius: .4rem;
+                        background-color: $skin-color;
+                    }
+                    .skills-percent {
+                        position: absolute;
+                        right: 0;
+                        color: $text-black-900;
+                        top: -4rem;
+                        font-weight: 400;
+                        line-height: 4rem;
+                    }
+                }
+            }
+        }
+        .education,
+        .experience {
+            flex: 0 0 50%;
+            max-width: 50%;
+            margin-top: 3rem;
+            h3 {
+                font-size: 2.4rem;
+                margin-bottom: 3rem;
+                font-weight: 700;
+                color: $text-black-700;
+            }
+        }
+        .timeline-box {
+            flex: 0 0 100%;
+            max-width: 100%;
+            .timeline {
+                background-color: $bg-black-100;
+                padding: 3rem 1.5em;
+                border: .1rem solid $bg-black-50;
+                border-radius: 1rem;
+                width: 100%;
+                position: relative;
+                box-shadow: $box-shadow;
+                &-item {
+                    position: relative;
+                    padding-left: 3.7rem;
+                    padding-bottom: 2rem;
+                    &:last-child {
+                        padding-bottom: 0;
+                    }
+                    &::before {
+                        content: '';
+                        width: .4rem;
+                        position: absolute;
+                        height: 100%;
+                        left: 0.7rem;
+                        top: 0;
+                        background-color: $skin-color;
+                    }
+                    .timeline-data {
+                        font-weight: 400;
+                        font-size: 1.4rem;
+                        margin-bottom: 1.2rem;
+                        color: $text-black-700;
+                        .fa {
+                            margin-right: 0.5rem;
+                        }
+                    }
+                    .timeline-title {
+                        font-weight: 700;
+                        font-size: 1.8rem;
+                        margin-bottom: 1.5rem;
+                        text-transform: capitalize;
+                        color: $text-black-700;
+                    }
+                    .timeline-text {
+                        line-height: 2.5rem;
+                        font-size: 1.6rem;
+                        text-align: justify;
+                        color: $text-black-700;
+                    }
+                }
+                &-data {
+                        margin-bottom: 0;
+                }
+                .cricle-dot {
+                    position: absolute;
+                    left: 0.2rem;
+                    top: 0.5rem;
+                    height: 1.5rem;
+                    width: 1.5rem;
+                    border-radius: 50%;
+                    background-color: $skin-color;
+                    ;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,105 @@
+@media (max-width: 1199px) {
+    // * {
+    //     overflow-x: hidden;
+    // }
+    .aside {
+        left: -30rem;
+    }
+    .main-content {
+        padding-left: 0;
+    }
+    .section {
+        padding-left: 3rem;
+    }
+    .about {
+        overflow-x: hidden;
+        &-content {
+            .personal-info {
+                .info-item {
+                    p span {
+                        display: block;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .contact,
+    .portfolio,
+    .service {
+        &-item {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+    .about {
+        &-content {
+            .experience,
+            .education {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    }
+    .home {
+        .home-info {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        &-img {
+            display: none;
+        }
+    }
+    .hidden {
+        display: block !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .home {
+        min-height: 100%;
+    }
+    .about {
+        &-content {
+            .experience,
+            .education,
+            .skills,
+            .personal-info {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+        .buttons {
+            text-align: center;
+            .btn {
+                width: 20rem;
+            }
+        }
+    }
+    .portfolio,
+    .certificate,
+    .service {
+        height: 100%;
+        &-item {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .container {
+            .row .content {
+                padding: 3rem;
+                overflow: hidden;
+                height: 110rem;
+            }
+        }
+    }
+    .contact {
+        &-form .col-6,
+        &-info-item {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+}

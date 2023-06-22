@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+}
+body {
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 1.6rem;
+}
+body.dark {
+    $bg-black-900: #151515;
+    $bg-black-100: #222222;
+    $bg-black-50: #393939;
+    $text-black-900: #ffffff;
+    $text-black-700: #e9e9e9;
+    }
+::after,
+::before {
+    box-sizing: border-box;
+}
+.section {
+    background: $bg-black-900;
+    min-height: 100vh;
+    display: block;
+    padding: 0rem 3rem;
+    padding-left: 33rem;
+    opacity: 1;
+    &-title {
+        flex: 0 0  100%;
+        max-width: 100%;
+        margin-bottom: 6rem;
+        h2 {
+            font-size: 4rem;
+            color: $text-black-900;
+            font-weight: 700;
+            position: relative;
+            &::before {
+                content: '';
+                height: 0.4rem;
+                width: 10rem;
+                background-color: $skin-color;
+                position: absolute;
+                top: 100%;
+                left: 0;
+            }
+            &::after {
+                content: '';
+                height: 0.4rem;
+                width: 5rem;
+                background-color: $skin-color;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                margin-top: 0.8rem;
+            }
+        }
+    }
+}
+.container {
+    width: 100%;
+    padding-top: 6rem;
+    padding-bottom: 7rem;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    position: relative;
+}
+ul {
+    list-style: none;
+}
+.padd-15 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.btn {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1.2rem 3.5rem;
+    border: none;
+    color: #fff;
+    border-radius: 40px;
+    background: linear-gradient(90deg, $skin-color, rgb(209, 75, 41));
+    display: inline-block;
+    white-space: nowrap;
+    transition:all .2s ease;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+.main-content {
+    left: 30rem;
+}
+.hidden {
+    display: none !important;
+}
+p {
+    line-height: 1.75;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background-color: #fafafa;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background-image: linear-gradient(-45deg, $skin-color, #dc6529);
+border-radius: 50px;
+}
+  

@@ -1,0 +1,111 @@
+.aside {
+    width: 30rem;
+    background: $bg-black-100;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 3rem;
+    z-index: 10;
+    border-right: .1rem solid $bg-black-50;
+    .logo {
+        position: absolute;
+        top: 5rem;
+        font-size: 3rem;
+        a{
+            color: $text-black-900;
+            font-weight: 700;
+            padding: 1.5rem 2rem;
+            font-size: 6rem;
+            letter-spacing: 0.5rem;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 2rem;
+                height: 2rem;
+                border-bottom: 0.5rem solid $skin-color;
+                border-left: .5rem solid $skin-color;
+                bottom: 0;
+                left: 0;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                width: 2rem;
+                height: 2rem;
+                border-top: 0.5rem solid $skin-color;
+                border-right: .5rem solid $skin-color;
+                top: 0;
+                right: 0;
+            }
+        }
+
+    }
+    .nav-toggler {
+        height: 4rem;
+        width: 4.5rem;
+        border: .1rem solid$bg-black-50;
+        cursor: pointer;
+        position: fixed;
+        left: 30rem;
+        top: 2rem;
+        border-radius: .5rem;
+        background: $bg-black-100;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        span {
+            height: 0.2rem;
+            width: 1.8rem;
+            background: $skin-color;
+            display: inline-block;
+            position: relative;
+            &::before {
+                content: '';
+                height: .2rem;
+                width: 1.8rem;
+                background: $skin-color;
+                position: absolute;
+                top: -0.6rem;
+                left: 0;
+                
+            }
+            &::after {
+                content: '';
+                height: .2rem;
+                width: 1.8rem;
+                background: $skin-color;
+                position: absolute;
+                top: .6rem;
+                left: 0;
+                
+            }
+        }
+    }
+    .nav {
+        margin-top: 5rem;
+        li {
+            margin-bottom: 2rem;
+            display: block;
+            a {
+                font-size: 2rem;
+                font-weight: 600;
+                display: block;
+                color: $text-black-900;
+                padding: 0.5rem 1.5rem;
+                border-bottom: 0.1rem solid $bg-black-50;
+                &.active {
+                    color: $skin-color;
+                    
+                }
+                i {
+                    padding-right: 1rem;
+                }
+            }
+        }
+    }
+}
