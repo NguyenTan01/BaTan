@@ -68,3 +68,13 @@ serviceLink.onclick = function() {
     }
     service.classList.remove('hidden');
 }
+document.getElementById("sendButton").addEventListener("click", function() {
+    var email = "nguyenbatan2502@gmail.com";
+    var subject = "Subject of the email";
+    var body = "Body of the email";
+  
+    var mailtoLink = "mailto:" + email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+  
+    window.location.href = mailtoLink;
+  });
+  
